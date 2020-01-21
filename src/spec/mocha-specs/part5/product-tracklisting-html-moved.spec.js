@@ -67,7 +67,7 @@ describe("ProductTracklisting", () => {
     );
 
     // parse html to test for tracklisting div inside Producttracklisting Component
-    let tracklisting;
+    let tracklisting;    
     const productTracklistingNodes = helpers.parseFile(productTracklistingFile);
     productTracklistingNodes[0].attrs.find(
       attr => (tracklisting = attr.value.match(/row tracklisting/))
