@@ -70,7 +70,7 @@ describe("ProductTracklisting", () => {
     let tracklisting;
     const productTracklistingNodes = helpers.parseFile(productTracklistingFile);
     productTracklistingNodes[0].attrs.find(
-      attr => (tracklisting = attr.value.match(/tracklisting/))
+      attr => (tracklisting = attr.value.match(/row tracklisting/))
     );
 
     let element;
